@@ -22,7 +22,7 @@ console.log("codeParameter: " + codeParameter)
     // statusElement.textContent = `Code is: ${codeParameter}`
 
     try {
-        const response = await fetch("http://localhost:8080", {
+        const response = await fetch("https://asia-south1-meta-access-token-generator.cloudfunctions.net/generateMetaToken", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
